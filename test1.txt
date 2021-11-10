@@ -15,4 +15,15 @@ user table in the database
  3. alter command --through put call - update mobile -
  4.  delete his record by using delete http method
 
- // json data -- yet to be taught
+ // json data -- yet to be taught -- get and delete also
+ // post is completed 
+ // put -- 
+ // put is for updating record in best case -- post for adding new record in best case
+
+ 1. insert command ( 6, anirudh , 20, 1234567 ); -- post
+ 2 1. alter command ( 6, anirudh , 20, 789 ); -- put
+
+ -- there are three ways to pass id 
+ 1 through path param
+ 2 through query param
+ 3 through body

@@ -6,9 +6,37 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // get api
-app.get('/get',(req,res) => {
-    res.send("hello there");
+app.get('/getData',(req,res) => {
+    
+    connection.query('select * from users.user_t ', function(err,result){
+        if(err)
+        console.log(err);
+    else{
+        console.log("inserted");
+        res.send(result);
+    }
+    })
 })
+
+
+app.post('/deleteUser/:id',(req,res) => {
+
+    // json data
+    console.log(req.body);
+    
+    connection.query('delete from users.user_t where id = ? ' , [req.params.id] , function(err,result){
+        if(err)
+            console.log(err);
+        else{
+            console.log("inserted");
+            res.send("record deleted successfully!!");
+        }
+    })
+})
+
+
+
+
 
 // http post method // post api
 app.post('/addUser',(req,res) => {
@@ -34,7 +62,7 @@ app.post('/addUser',(req,res) => {
 app.put('/update/:id',(req,res) => { // path param
 
     var id = req.params.id;
-    connection.query('update users.user set mobile_number = ? where id = ? ', [req.body.mobile_number,id] , function(err,result){
+    connection.query('update users.user_t set mobile_number = ? where id = ? ', [req.body.mobile_number,id] , function(err,result){
         if(err){
             console.log(err);
             res.send(err);

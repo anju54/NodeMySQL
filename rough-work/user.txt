@@ -1,0 +1,24 @@
+erd - entity relationship diagram
+
+1. user_table(id,email_id,password,role_id) fk(role_id) -- one to one relationship
+   
+-> 1,anju, anju123,  1
+-> 2,vikash, vikash123 , 2
+-> 3,sameera, sameera123 , 2
+-> 4, sita , sita 123 , 2
+
+2. role(role_id,role_type)
+->  1, teacher
+->  2, student
+
+-- hospital mgmt system
+patient( patient_id, name , bedNo , doctorId)
+doctor ( doctor_id , name , dept )
+
+1 doctor will have many patient -- one to many relationship
+doctor a - patient 1
+doctor a - patoent 2
+doctor a - patient 3
+doctor a - patient 4
+
+

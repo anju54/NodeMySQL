@@ -1,0 +1,27 @@
+// create the express js project 
+// npm init
+// create one get api
+// create post request
+ client is ----> server 
+ server will send some res back to the client 
+
+ table - user ( id , name , age , mobileNo )
+ add one record using post method
+
+
+ ----- folder structure -----
+ node modules
+ pacakge.json
+ pacakge-lock.json
+ app.json -- index.json
+ routes ( all the urls )
+    - user.js
+    - book.js
+    - library.js etc 
+            /get
+            /delete 
+            /post
+            /put
+controller ( buisness logic)
+    - user.js
+    - book.js etc

@@ -1,0 +1,20 @@
+var postData = {
+        "name" : req.body.name,
+        "age" : req.body.age,
+        "mobile_number" : req.body.mobile_number
+}; // json data 
+
+
+const json1 = {"result":true, "count":42}; -- string
+
+json.stringfy(json1);
+ op = { "result" : true}
+
+ var json2 = {
+    "name":"John",
+    "age":30,
+    "cars": ["Ford", "BMW", "Fiat"]
+    }
+
+    json2.cars[0] = Ford
+    json2.cars[1] = bmw

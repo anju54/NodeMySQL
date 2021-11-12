@@ -15,7 +15,7 @@ user table in the database
  3. alter command --through put call - update mobile -
  4.  delete his record by using delete http method
 
- // json data -- yet to be taught -- get and delete also
+ // json data -- completed -- get and delete also complwted
  // post is completed 
  // put -- 
  // put is for updating record in best case -- post for adding new record in best case

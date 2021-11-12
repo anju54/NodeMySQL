@@ -1,9 +1,0 @@
-// create the express js project 
-// npm init
-// create one get api
-// create post request
- client is ----> server 
- server will send some res back to the client 
-
- table - user ( id , name , age , mobileNo )
- add one record using post method
